@@ -17,6 +17,7 @@
             background-color: #c7e8e8;
             border-radius: 2%;
             border-collapse: collapse;
+        width: 500px;
         }
 
         td {
@@ -34,6 +35,7 @@
 
 <body>
     <table border="2x'">
+        <thead>
 
         <tr>
             <th scope="col"> Turma</th>
@@ -42,6 +44,7 @@
 
 
         </tr>
+    </thead>
         <tr>
             <th scope="row "> Fs62</th>
             <td> Fullstack</td>
@@ -57,21 +60,24 @@
             <td> Ia</td>
             <Td> 15</Td>
         </tr>
-   
+   <tfoot>
         <tr class="Cor ">
  
             <th scope="Row" colspan="2"> Total de alunos</th>
-            <td> 65</td>
+            <td bgcolor="yellow"> 65</td>
    
         </tr>
-  
+    </tfoot>
     </table>
     <!-- 
     Table é a Mesa, ele que faz os bagulhos ficarem organizados <p>
     Th explica pro html quantas e os nomes de colunas, portanto quanto mais th colocar mais colunas vai ter <p>
     Tr define as linhas das colunas. <p>
     Td define as coluna  <p>
-    Colspan define quantas colunas o bagulho vai ocupar  -->
+    Colspan define quantas colunas o bagulho vai ocupar  <p>
+    bgcolor define a cor, ou seja não precisava fazer todo aquele trampo de css. GRR <p>   
+    Thead, define o cabeçario. <p>
+    Tfoot, define o fim da tabela.-->
 </body>
 
 </html>
